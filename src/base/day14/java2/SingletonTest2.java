@@ -14,7 +14,7 @@ public class SingletonTest2 {
     }
 }
 
-
+//懒汉式
 class Order {
 
     //1.私有化类的构造器

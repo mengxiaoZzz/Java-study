@@ -17,8 +17,8 @@ package base.day14.java1;
  *          ③ 由于类只会加载一次，则静态变量在内存中也只会存在一份：存在方法区的静态域中。
  *
  *          ④		类变量	实例变量
- *          类		yes		no
- *          对象		yes		yes
+ *          类		 yes		no
+ *          对象	 yes		yes
  *
  *      3.3 静态属性举例：System.out; Math.PI;
  *
