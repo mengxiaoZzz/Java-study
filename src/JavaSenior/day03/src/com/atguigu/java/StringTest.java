@@ -11,15 +11,14 @@ import org.junit.Test;
 public class StringTest {
 
 
-
-    /*
-    结论：
-    1.常量与常量的拼接结果在常量池。且常量池中不会存在相同内容的常量。
-    2.只要其中有一个是变量，结果就在堆中。
-    3.如果拼接的结果调用intern()方法，返回值就在常量池中
+    /**
+     * 结论：
+     * 1.常量与常量的拼接结果在常量池。且常量池中不会存在相同内容的常量。
+     * 2.只要其中有一个是变量，结果就在堆中。
+     * 3.如果拼接的结果调用intern()方法，返回值就在常量池中
      */
     @Test
-    public void test4(){
+    public void test4() {
         String s1 = "javaEEhadoop";
         String s2 = "javaEE";
         String s3 = s2 + "hadoop";
@@ -32,7 +31,7 @@ public class StringTest {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         String s1 = "javaEE";
         String s2 = "hadoop";
 
@@ -66,7 +65,7 @@ public class StringTest {
 
      */
     @Test
-    public void test2(){
+    public void test2() {
         //通过字面量定义的方式：此时的s1和s2的数据javaEE声明在方法区中的字符串常量池中。
         String s1 = "javaEE";
         String s2 = "javaEE";
@@ -80,8 +79,8 @@ public class StringTest {
         System.out.println(s3 == s4);//false
 
         System.out.println("***********************");
-        Person p1 = new Person("Tom",12);
-        Person p2 = new Person("Tom",12);
+        Person p1 = new Person("Tom", 12);
+        Person p2 = new Person("Tom", 12);
 
         System.out.println(p1.name.equals(p2.name));//true
         System.out.println(p1.name == p2.name);//true
@@ -105,7 +104,7 @@ public class StringTest {
     6.字符串常量池中是不会存储相同内容的字符串的。
      */
     @Test
-    public void test1(){
+    public void test1() {
         String s1 = "abc";//字面量的定义方式
         String s2 = "abc";
         s1 = "hello";

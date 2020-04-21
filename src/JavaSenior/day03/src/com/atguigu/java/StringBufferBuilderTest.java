@@ -9,12 +9,12 @@ import org.junit.Test;
  * @create 2019 下午 3:32
  */
 public class StringBufferBuilderTest {
-    /*
-    对比String、StringBuffer、StringBuilder三者的效率：
-    从高到低排列：StringBuilder > StringBuffer > String
+    /**
+     * 对比String、StringBuffer、StringBuilder三者的效率：
+     * 从高到低排列：StringBuilder > StringBuffer > String
      */
     @Test
-    public void test3(){
+    public void test3() {
         //初始设置
         long startTime = 0L;
         long endTime = 0L;
@@ -68,7 +68,7 @@ public void setCharAt(int n ,char ch)
         *遍历：for() + charAt() / toString()
      */
     @Test
-    public void test2(){
+    public void test2() {
         StringBuffer s1 = new StringBuffer("abc");
         s1.append(1);
         s1.append('1');
@@ -84,7 +84,7 @@ public void setCharAt(int n ,char ch)
     }
 
 
-    /*
+    /**
     String、StringBuffer、StringBuilder三者的异同？
     String:不可变的字符序列；底层使用char[]存储
     StringBuffer:可变的字符序列；线程安全的，效率低；底层使用char[]存储
@@ -110,9 +110,9 @@ public void setCharAt(int n ,char ch)
 
      */
     @Test
-    public void test1(){
+    public void test1() {
         StringBuffer sb1 = new StringBuffer("abc");
-        sb1.setCharAt(0,'m');
+        sb1.setCharAt(0, 'm');
         System.out.println(sb1);
 
         StringBuffer sb2 = new StringBuffer();

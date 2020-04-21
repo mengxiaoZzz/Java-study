@@ -14,15 +14,15 @@ import java.util.Arrays;
 public class StringTest1 {
 
 
-    /*
-    String 与 byte[]之间的转换
-    编码：String --> byte[]:调用String的getBytes()
-    解码：byte[] --> String:调用String的构造器
-
-    编码：字符串 -->字节  (看得懂 --->看不懂的二进制数据)
-    解码：编码的逆过程，字节 --> 字符串 （看不懂的二进制数据 ---> 看得懂）
-
-    说明：解码时，要求解码使用的字符集必须与编码时使用的字符集一致，否则会出现乱码。
+    /**
+     * String 与 byte[]之间的转换
+     * 编码：String --> byte[]:调用String的getBytes()
+     * 解码：byte[] --> String:调用String的构造器
+     * <p>
+     * 编码：字符串 -->字节  (看得懂 --->看不懂的二进制数据)
+     * 解码：编码的逆过程，字节 --> 字符串 （看不懂的二进制数据 ---> 看得懂）
+     * <p>
+     * 说明：解码时，要求解码使用的字符集必须与编码时使用的字符集一致，否则会出现乱码。
      */
     @Test
     public void test3() throws UnsupportedEncodingException {
@@ -55,7 +55,7 @@ public class StringTest1 {
     char[] --> String:调用String的构造器
      */
     @Test
-    public void test2(){
+    public void test2() {
         String str1 = "abc123";  //题目： a21cb3
 
         char[] charArray = str1.toCharArray();
@@ -63,7 +63,7 @@ public class StringTest1 {
             System.out.println(charArray[i]);
         }
 
-        char[] arr = new char[]{'h','e','l','l','o'};
+        char[] arr = new char[]{'h', 'e', 'l', 'l', 'o'};
         String str2 = new String(arr);
         System.out.println(str2);
     }
@@ -77,7 +77,7 @@ public class StringTest1 {
 
      */
     @Test
-    public void test1(){
+    public void test1() {
         String str1 = "123";
 //        int num = (int)str1;//错误的
         int num = Integer.parseInt(str1);

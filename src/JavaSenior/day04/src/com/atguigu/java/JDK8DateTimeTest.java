@@ -17,20 +17,20 @@ import java.util.Date;
 public class JDK8DateTimeTest {
 
     @Test
-    public void testDate(){
+    public void testDate() {
         //偏移量
-        Date date1 = new Date(2020 - 1900,9 - 1,8);
+        Date date1 = new Date(2020 - 1900, 9 - 1, 8);
         System.out.println(date1);//Tue Sep 08 00:00:00 GMT+08:00 2020
     }
 
-    /*
-    LocalDate、LocalTime、LocalDateTime 的使用
-    说明：
-        1.LocalDateTime相较于LocalDate、LocalTime，使用频率要高
-        2.类似于Calendar
+    /**
+     * LocalDate、LocalTime、LocalDateTime 的使用
+     * 说明：
+     * 1.LocalDateTime相较于LocalDate、LocalTime，使用频率要高
+     * 2.类似于Calendar
      */
     @Test
-    public void test1(){
+    public void test1() {
         //now():获取当前的日期、时间、日期+时间
         LocalDate localDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
@@ -79,7 +79,7 @@ public class JDK8DateTimeTest {
 
      */
     @Test
-    public void test2(){
+    public void test2() {
         //now():获取本初子午线对应的标准时间
         Instant instant = Instant.now();
         System.out.println(instant);//2019-02-18T07:29:41.719Z
@@ -104,7 +104,7 @@ public class JDK8DateTimeTest {
      */
 
     @Test
-    public void test3(){
+    public void test3() {
 //        方式一：预定义的标准格式。如：ISO_LOCAL_DATE_TIME;ISO_LOCAL_DATE;ISO_LOCAL_TIME
         DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
         //格式化:日期-->字符串
