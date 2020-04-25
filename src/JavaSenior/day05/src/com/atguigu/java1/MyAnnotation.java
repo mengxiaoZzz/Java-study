@@ -15,4 +15,5 @@ import static java.lang.annotation.ElementType.*;
 public @interface MyAnnotation {
 
     String value() default "hello";
+
 }
