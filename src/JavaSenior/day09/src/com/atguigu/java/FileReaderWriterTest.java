@@ -2,7 +2,10 @@ package JavaSenior.day09.src.com.atguigu.java;
 
 import org.junit.Test;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  *
@@ -33,7 +36,7 @@ public class FileReaderWriterTest {
         System.out.println(file1.getAbsolutePath());
     }
 
-    /*
+    /**
     将day09下的hello.txt文件内容读入程序中，并输出到控制台
 
     说明点：
@@ -224,15 +227,17 @@ public class FileReaderWriterTest {
 //            }
             //方式二：
             try {
-                if(fw != null)
+                if(fw != null) {
                     fw.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
             try {
-                if(fr != null)
+                if(fr != null) {
                     fr.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

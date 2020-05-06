@@ -69,7 +69,7 @@ import java.util.List;
  */
 public class ListTest {
 
-    /*
+    /**
 void add(int index, Object ele):在index位置插入ele元素
 boolean addAll(int index, Collection eles):从index位置开始将eles中的所有元素添加进来
 Object get(int index):获取指定index位置的元素

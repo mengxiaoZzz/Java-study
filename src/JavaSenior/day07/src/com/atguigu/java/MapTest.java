@@ -160,7 +160,7 @@ public class MapTest {
     }
 
 
-    /*
+    /**
  元素查询的操作：
  Object get(Object key)：获取指定key对应的value
  boolean containsKey(Object key)：是否包含指定的key

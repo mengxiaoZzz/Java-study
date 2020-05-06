@@ -22,7 +22,7 @@ import java.util.Date;
  * @create 2019 下午 4:05
  */
 public class FileTest {
-    /*
+    /**
     1.如何创建File类的实例
         File(String filePath)
         File(String parentPath,String childPath)
@@ -54,7 +54,7 @@ public class FileTest {
         System.out.println(file4);
     }
 
-    /*
+    /**
 public String getAbsolutePath()：获取绝对路径
 public String getPath() ：获取路径
 public String getName() ：获取名称
@@ -153,7 +153,7 @@ public boolean isHidden() ：判断是否隐藏
         System.out.println(file2.isHidden());
 
     }
-    /*
+    /**
     创建硬盘中对应的文件或文件目录
 public boolean createNewFile() ：创建文件。若文件存在，则不创建，返回false
 public boolean mkdir() ：创建文件目录。如果此文件目录存在，就不创建了。如果此文件目录的上层目录不存在，也不创建。
