@@ -2,7 +2,10 @@ package JavaSenior.day09.src.com.atguigu.java;
 
 import org.junit.Test;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * 测试FileInputStream和FileOutputStream的使用
@@ -10,8 +13,6 @@ import java.io.*;
  * 结论：
  * 1. 对于文本文件(.txt,.java,.c,.cpp)，使用字符流处理
  * 2. 对于非文本文件(.jpg,.mp3,.mp4,.avi,.doc,.ppt,...)，使用字节流处理
- *
- *
  *
  * @author shkstart
  * @create 2019 下午 2:13
@@ -54,7 +55,7 @@ public class FileInputOutputStreamTest {
 
     }
 
-    /*
+    /**
     实现对图片的复制操作
      */
     @Test

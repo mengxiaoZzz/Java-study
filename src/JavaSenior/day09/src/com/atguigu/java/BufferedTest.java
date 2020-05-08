@@ -23,7 +23,7 @@ import java.io.*;
  */
 public class BufferedTest {
 
-    /*
+    /**
     实现非文本文件的复制
      */
     @Test
@@ -149,9 +149,8 @@ public class BufferedTest {
     }
 
 
-    /*
+    /**
     使用BufferedReader和BufferedWriter实现文本文件的复制
-
      */
     @Test
     public void testBufferedReaderBufferedWriter(){
