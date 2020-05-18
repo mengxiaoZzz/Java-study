@@ -69,7 +69,6 @@ public class StreamAPITest1 {
 //        flatMap(Function f)——接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流。
         Stream<Character> characterStream = list.stream().flatMap(StreamAPITest1::fromStringToStream);
         characterStream.forEach(System.out::println);
-
     }
 
     //将字符串中的多个字符构成的集合转换为对应的Stream的实例
@@ -112,19 +111,16 @@ public class StreamAPITest1 {
 //        List<Employee> employees = EmployeeData.getEmployees();
 //        employees.stream().sorted().forEach(System.out::println);
 
-
 //        sorted(Comparator com)——定制排序
 
         List<Employee> employees = EmployeeData.getEmployees();
         employees.stream().sorted( (e1,e2) -> {
-
            int ageValue = Integer.compare(e1.getAge(),e2.getAge());
            if(ageValue != 0){
                return ageValue;
            }else{
                return -Double.compare(e1.getSalary(),e2.getSalary());
            }
-
         }).forEach(System.out::println);
     }
 

@@ -72,7 +72,6 @@ public class StreamAPITest {
     //创建 Stream方式四：创建无限流
     @Test
     public void test4(){
-
 //      迭代
 //      public static<T> Stream<T> iterate(final T seed, final UnaryOperator<T> f)
         //遍历前10个偶数
@@ -82,7 +81,6 @@ public class StreamAPITest {
 //      生成
 //      public static<T> Stream<T> generate(Supplier<T> s)
         Stream.generate(Math::random).limit(10).forEach(System.out::println);
-
     }
 
 }

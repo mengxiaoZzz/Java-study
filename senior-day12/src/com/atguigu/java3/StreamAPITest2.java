@@ -44,7 +44,6 @@ public class StreamAPITest2 {
 //        findAny——返回当前流中的任意元素
         Optional<Employee> employee1 = employees.parallelStream().findAny();
         System.out.println(employee1);
-
     }
 
     @Test
@@ -79,7 +78,6 @@ public class StreamAPITest2 {
         Integer sum = list.stream().reduce(0, Integer::sum);
         System.out.println(sum);
 
-
 //        reduce(BinaryOperator) ——可以将流中元素反复结合起来，得到一个值。返回 Optional<T>
 //        练习2：计算公司所有员工工资的总和
         List<Employee> employees = EmployeeData.getEmployees();
@@ -87,7 +85,6 @@ public class StreamAPITest2 {
 //        Optional<Double> sumMoney = salaryStream.reduce(Double::sum);
         Optional<Double> sumMoney = salaryStream.reduce((d1,d2) -> d1 + d2);
         System.out.println(sumMoney.get());
-
     }
 
     //3-收集
@@ -104,9 +101,5 @@ public class StreamAPITest2 {
         Set<Employee> employeeSet = employees.stream().filter(e -> e.getSalary() > 6000).collect(Collectors.toSet());
 
         employeeSet.forEach(System.out::println);
-
-
-
-
     }
 }
